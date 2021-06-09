@@ -149,6 +149,7 @@ async def command(ctx):
     embed.add_field(name=";unmute", value="unmutes a muted user")
     embed.add_field(name=";invite", value="invite the bot to ur server")
     embed.add_field(name=";clear", value="deletes messages")
+    embed.add_field(name=";mspam", value="spams a message in the server channel")
     await ctx.send(embed=embed)
 
 @client.command()
