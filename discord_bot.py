@@ -123,11 +123,11 @@ msgnum3=""
 @commands.has_permissions(ban_members=True)
 async def mspam(ctx,msg3,msgnum3):
     msgnum3=int(msgnum3)
-    if msgnum3==69 or msgnum3<69
+    if msgnum3==69 or msgnum3<69:
         for i in range(0,msgnum3):
             await ctx.send(msg3)
     else:
-await ctx.send("limit is 69 messages")
+        await ctx.send("limit is 69 messages")
 
 @client.command()
 async def invite(ctx):
