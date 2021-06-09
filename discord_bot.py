@@ -109,7 +109,7 @@ mmsg=""
 pingnum2=""
 @client.command()
 @commands.has_permissions(ban_members=True)
-async def mspam(ctx,member:discord.Member,mmsg,pingnum2):
+async def mping(ctx,member:discord.Member,mmsg,pingnum2):
     pingnum2=int(pingnum2)
     if pingnum2==69 or pingnum2<69:
         for i in range(0,pingnum2):
@@ -117,7 +117,17 @@ async def mspam(ctx,member:discord.Member,mmsg,pingnum2):
 
     else:
         await ctx.send("limit is 69 pings")
-
+msg3=""
+msgnum3=""
+@client.command()
+@commands.has_permissions(ban_members=True)
+async def mspam(ctx,msg3,msgnum3):
+    msgnum3=int(msgnum3)
+    if msgnum3==69 or msgnum3<69
+        for i in range(0,msgnum3):
+            await ctx.send(msg3)
+    else:
+await ctx.send("limit is 69 pings")
 
 @client.command()
 async def invite(ctx):
@@ -131,7 +141,7 @@ async def command(ctx):
     embed=discord.Embed(title="Commands List",color=discord.Color.blue())
     embed.add_field(name=";spam",value="spams dm to a user")
     embed.add_field(name=";ping", value="mass pings a user")
-    embed.add_field(name=";mspam", value="pings a user and spams a msg in the server channel")
+    embed.add_field(name=";mping", value="pings a user and spams a msg in the server channel")
     embed.add_field(name=";arnav", value="gives arnav's description")
     embed.add_field(name=";ban", value="bans a user")
     embed.add_field(name=";kick", value="kicks user from the server")
