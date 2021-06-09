@@ -139,6 +139,7 @@ async def invite(ctx):
 @commands.has_permissions(send_messages=True)
 async def command(ctx):
     embed=discord.Embed(title="Commands List",color=discord.Color.blue())
+    embed.add_field(name=";avatar",value="sends avatar of user")
     embed.add_field(name=";spam",value="spams dm to a user")
     embed.add_field(name=";ping", value="mass pings a user")
     embed.add_field(name=";mping", value="pings a user and spams a msg in the server channel")
