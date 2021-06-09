@@ -127,7 +127,7 @@ async def mspam(ctx,msg3,msgnum3):
         for i in range(0,msgnum3):
             await ctx.send(msg3)
     else:
-await ctx.send("limit is 69 pings")
+await ctx.send("limit is 69 messages")
 
 @client.command()
 async def invite(ctx):
