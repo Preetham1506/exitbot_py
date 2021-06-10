@@ -39,7 +39,7 @@ async def arnav(ctx):
     embed.add_field(name="Gender", value="6"+" 🏳️‍🌈",inline=False)
     embed.add_field(name="Hobbies",value="Crying,flattering ppl, fracturing his hand again and again and blaming others, Make no sense in conversations, Giving dumb excuses, Spreading rumours like a typical Indian aunty",inline=False)
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/726311704941690901/851683941580800020/Inkedfunny_pic_LI.jpg")
-    #embed.set_image(url="https://cdn.discordapp.com/attachments/841616049732190208/851695741394354196/gay.png")
+    embed.set_image(url="https://cdn.discordapp.com/attachments/841616049732190208/851695741394354196/gay.png")
     await ctx.send(embed=embed)
 
 
