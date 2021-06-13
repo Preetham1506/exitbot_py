@@ -29,9 +29,9 @@ async def preetham(ctx):
     
 @client.command(aliases=['tida'])
 async def adit(ctx):
-    await ctx.send("knows only 3 word - you, are and dumb")
+    await ctx.send("knows only 3 words - you, are and dumb")
 
-    @client.command(aliases=['anu'])
+@client.command(aliases=['anu'])
 async def anurag(ctx):
     await ctx.send("thicc")
 
