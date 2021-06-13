@@ -26,7 +26,8 @@ async def on_ready():
 async def preetham(ctx):
     await ctx.send("my developer")
 
-    @client.command(aliases=['tida'])
+    
+@client.command(aliases=['tida'])
 async def adit(ctx):
     await ctx.send("knows only 3 word - you, are and dumb")
 
