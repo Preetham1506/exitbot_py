@@ -35,7 +35,7 @@ async def adit(ctx):
 async def anurag(ctx):
     await ctx.send("thicc")
 
-@client.command(aliases=['flamingo'])
+@client.command()
 async def arnav(ctx):
     #await ctx.send("roll number - 6,gets bullied everyday,doesnt have common sense and he is also known as flamingo. Once he fractured his hand by just falling down on the ground.")
 
