@@ -20,7 +20,13 @@ async def on_ready():
     print("The bot is ready")
 
 
-
+@client.command()
+async def cu(ctx,cnum1,cnum2):
+  cnum1=int(cnum1)
+  cnum2=int(cnum2)
+  for i in range (cnum1,cnum2+1):
+    await ctx.send(cnum1)
+    cnum1=cnum1+1
 
 @client.command(aliases=['fireblazer','fireblazer1506'])
 async def preetham(ctx):
