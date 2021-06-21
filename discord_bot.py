@@ -165,6 +165,7 @@ async def command(ctx):
     embed.add_field(name=";invite", value="invite the bot to ur server")
     embed.add_field(name=";clear", value="deletes messages")
     embed.add_field(name=";mspam", value="spams a message in the server channel")
+    embed.add_field(name=";cu", value="can be used in #counting to count numbers")
     await ctx.send(embed=embed)
 
 @client.command()
