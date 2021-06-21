@@ -5,7 +5,6 @@ client = commands.Bot(command_prefix=";")
 
 
 @client.event
-@commands.has_permissions(ban_members=True)
 async def on_command_error(ctx,error):
     if isinstance(error,commands.MissingPermissions):
         await ctx.send("Your role isn't high enough")
@@ -22,6 +21,7 @@ async def on_ready():
 
 
 @client.command()
+@commands.has_permissions(ban_members=True)
 async def cu(ctx,cnum1,cnum2):
   cnum1=int(cnum1)
   cnum2=int(cnum2)
