@@ -25,16 +25,7 @@ async def on_ready():
 @client.command(aliases=['fireblazer','fireblazer1506'])
 async def preetham(ctx):
     await ctx.send("my developer")
-cnum1=""
-cnum2=""
 
-@client.command()
-async def count(ctx,cnum1,cnum2):
-    cnum1=int(cnum1)
-    cnum2=int(cnum2)
-    for in range cnum1,cnum2+1:
-        print cnum1
-        cnum1=cnum1+1
     
 @client.command(aliases=['tida'])
 async def adit(ctx):
