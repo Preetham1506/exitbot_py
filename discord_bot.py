@@ -5,6 +5,7 @@ client = commands.Bot(command_prefix=";")
 
 
 @client.event
+@commands.has_permissions(ban_members=True)
 async def on_command_error(ctx,error):
     if isinstance(error,commands.MissingPermissions):
         await ctx.send("Your role isn't high enough")
