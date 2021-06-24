@@ -91,8 +91,13 @@ async def yeet(ctx,member:discord.Member,):
 @client.command()
 @commands.has_permissions(ban_members=True)
 async def ban(ctx,member:discord.Member,):
-    await ctx.send(member.name+" was banned")
-    await member.ban()
+    try:
+        
+        await member.ban()
+        await ctx.send(member.name+" was banned")
+    except:
+        await ctx.send("role is lower")
+        
 usermsg=""
 dmnum=""
 
