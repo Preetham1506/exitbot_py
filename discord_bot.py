@@ -47,11 +47,11 @@ async def arnav(ctx):
     #await ctx.send("roll number - 6,gets bullied everyday,doesnt have common sense and he is also known as flamingo. Once he fractured his hand by just falling down on the ground.")
 
     embed = discord.Embed(title="Arnav", color=discord.Color.purple())
-    embed.add_field(name="Desciption", value="Put here",inline=False)
+    
     embed.add_field(name="Gender", value="6"+" 🏳️‍🌈",inline=False)
     embed.add_field(name="Status", value="In a relationship with Arjun and 2 others",inline=False)
     
-    embed.add_field(name="Hobbies",value="Arguing,Asking Fireblazer for free stuff and then arguing, Crying,flattering ppl, Getting bullied everyday, fracturing his hand again and again and blaming others, Make no sense in conversations, Giving dumb excuses, Spreading rumours like a typical Indian aunty, Lying, Not being peaceful ",inline=False)
+    embed.add_field(name="Hobbies",value="Arguing,Asking Fireblazer for free stuff and then arguing, Crying,flattering ppl, Getting bullied everyday, fracturing his hand again and again and blaming others, Make no sense in conversations, Giving dumb excuses,Addicted to the word hmm Spreading rumours like a typical Indian aunty, Lying, Not being peaceful ",inline=False)
     
     embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/726311704941690901/851683941580800020/Inkedfunny_pic_LI.jpg")
     embed.set_image(url="https://cdn.discordapp.com/attachments/841616049732190208/851695741394354196/gay.png")
