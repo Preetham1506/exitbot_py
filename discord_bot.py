@@ -57,7 +57,9 @@ async def arnav(ctx):
     embed.set_image(url="https://cdn.discordapp.com/attachments/841616049732190208/851695741394354196/gay.png")
     await ctx.send(embed=embed)
 
-
+@client.command(aliases=['abhi','sheikh'])
+async def abhishek(ctx):
+    await ctx.send("ishika ka premi")
 
 @client.command(aliases=['shubh','shubhabcd'])
 async def shubham(ctx):
