@@ -12,7 +12,28 @@ async def on_command_error(ctx,error):
         await ctx.send("Please enter all the required arguments")
     elif isinstance(error,commands.CommandNotFound):
         await ctx.send("Invalid command")
+@client.event
+async def on_message(msg):
+    if msg.content=="u r dumb":
+        await msg.add_reaction("<:no_u:859041175771938827>")
 
+
+    elif msg.content == "i say die":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+
+
+    elif msg.content == "fuck off":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+
+
+    elif msg.content == "die":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+
+
+    elif msg.content == "poop":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+    else:
+        pass
 
 
 @client.command()
