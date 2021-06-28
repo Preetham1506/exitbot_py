@@ -3,7 +3,10 @@ from discord.ext import commands
 import random
 client = commands.Bot(command_prefix=";")
 
-
+@client.event
+async def on_ready():
+    await client.change_presence(activity=discord.Game(name=f"on {len(client.guilds)} servers | ;command"))
+    print("The bot is ready")
 @client.event
 async def on_command_error(ctx,error):
     if isinstance(error,commands.MissingPermissions):
