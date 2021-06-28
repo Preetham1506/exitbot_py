@@ -12,7 +12,12 @@ async def on_command_error(ctx,error):
         await ctx.send("Please enter all the required arguments")
     elif isinstance(error,commands.CommandNotFound):
         await ctx.send("Invalid command")
-
+@client.event
+async def on_message(msg):
+    if "u r dumb" or "die" or "fuck off" in msg.content:
+        await msg.add_reaction("<:no_u:859041175771938827>")
+    else:
+        pass
 
 @client.event
 async def on_ready():
