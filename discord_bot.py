@@ -20,7 +20,23 @@ async def on_ready():
     print("The bot is ready")
 @client.event
 async def on_message(msg):
-    if msg.content == "u r dumb":
+    if msg.content=="u r dumb":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+
+
+    elif msg.content == "i say die":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+
+
+    elif msg.content == "fuck off":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+
+
+    elif msg.content == "die":
+        await msg.add_reaction(":no_u:")
+
+
+    elif msg.content == "poop":
         await msg.add_reaction("<:no_u:859041175771938827>")
     else:
         pass
