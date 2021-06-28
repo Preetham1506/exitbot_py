@@ -14,32 +14,6 @@ async def on_command_error(ctx,error):
         await ctx.send("Invalid command")
 
 
-@client.event
-async def on_ready():
-    await client.change_presence(activity=discord.Game(name=f"on {len(client.guilds)} servers | ;command"))
-    print("The bot is ready")
-@client.event
-async def on_message(msg):
-    if msg.content=="u r dumb":
-        await msg.add_reaction("<:no_u:859041175771938827>")
-
-
-    elif msg.content == "i say die":
-        await msg.add_reaction("<:no_u:859041175771938827>")
-
-
-    elif msg.content == "fuck off":
-        await msg.add_reaction("<:no_u:859041175771938827>")
-
-
-    elif msg.content == "die":
-        await msg.add_reaction(":no_u:")
-
-
-    elif msg.content == "poop":
-        await msg.add_reaction("<:no_u:859041175771938827>")
-    else:
-        pass
 
 @client.command()
 @commands.has_permissions(ban_members=True)
