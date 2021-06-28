@@ -174,6 +174,9 @@ async def command(ctx):
     embed.add_field(name=";clear", value="deletes messages")
     embed.add_field(name=";mspam", value="spams a message in the server channel")
     embed.add_field(name=";cu", value="can be used in #counting to count numbers")
+    embed.add_field(name=";tictactoe", value="starts a game of tictactoe")
+    embed.add_field(name=";cancel", value="cancels ongoing tictactoe game")
+    embed.add_field(name=";crunchy", value="generates a crunchyroll acc")
     await ctx.send(embed=embed)
 
 @client.command()
