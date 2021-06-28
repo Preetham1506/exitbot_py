@@ -318,8 +318,8 @@ crunchy_accs=["beatdown7478@yahoo.com:Ohnedich2 | Telegram id:  - Subscribed to:
 "laritzad@gmail.com:lara2323 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:56:37 AM | Telegram id: @PremiumHostTG - "]
 
 @client.command()
-async def crunchy(ctx):
+async def crunchy(ctx,member:discord.Member):
     acc_num = random.randint(0, 108)
-    await ctx.send(crunchy_accs[acc_num])
+    await member.send(crunchy_accs[acc_num])
 
 client.run("ODUxMDc0OTQyMjk2MjYwNjE5.YLy_Tg.yILCYs0ogWKCEQZdB45RgleeO2c")
