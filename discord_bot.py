@@ -18,8 +18,33 @@ async def on_command_error(ctx,error):
 async def on_ready():
     await client.change_presence(activity=discord.Game(name=f"on {len(client.guilds)} servers | ;command"))
     print("The bot is ready")
-
-
+@client.event
+async def on_message(msg):
+    if msg.content == "u r dumb":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+    else:
+        pass
+async def on_message(msg):
+    if msg.content == "i say die":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+    else:
+        pass
+async def on_message(msg):
+    if msg.content == "fuck off":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+    else:
+        pass
+@client.event
+async def on_message(msg):
+    if msg.content == "die":
+        await msg.add_reaction(":no_u:")
+    else:
+        pass
+async def on_message(msg):
+    if msg.content == "poop":
+        await msg.add_reaction("<:no_u:859041175771938827>")
+    else:
+        pass
 @client.command()
 @commands.has_permissions(ban_members=True)
 async def cu(ctx,cnum1,cnum2):
