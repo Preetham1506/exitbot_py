@@ -320,6 +320,9 @@ crunchy_accs=["beatdown7478@yahoo.com:Ohnedich2 | Telegram id:  - Subscribed to:
 @client.command()
 async def crunchy(ctx,member:discord.Member):
     acc_num = random.randint(0, 108)
-    await member.send(crunchy_accs[acc_num])
-
+    try:
+        await member.send(crunchy_accs[acc_num])
+        await ctx.send(member.mention+" acc sent in ur dms")
+    except:
+        await ctx.send(member.mention+" has closed their dms")
 client.run("ODUxMDc0OTQyMjk2MjYwNjE5.YLy_Tg.yILCYs0ogWKCEQZdB45RgleeO2c")
