@@ -433,7 +433,7 @@ async def place(ctx, pos: int):
         else:
             await ctx.send("It is not your turn.")
     else:
-        await ctx.send("Please start a new game using the !tictactoe command.")
+        await ctx.send("Please start a new game using the ;tictactoe command.")
 
 
 def checkWinner(winningConditions, mark):
@@ -456,4 +456,15 @@ async def place_error(ctx, error):
         await ctx.send("Please enter a position you would like to mark.")
     elif isinstance(error, commands.BadArgument):
         await ctx.send("Please make sure to enter an integer.")
+
+@client.command()
+async def cancel(ctx):
+    global gameOver
+    gameOver=True
+    await ctx.send("Game has been cancelled")
+        
+        
+        
+        
+        
 client.run("ODUxMDc0OTQyMjk2MjYwNjE5.YLy_Tg.yILCYs0ogWKCEQZdB45RgleeO2c")
