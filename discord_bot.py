@@ -13,12 +13,7 @@ async def on_command_error(ctx,error):
     elif isinstance(error,commands.CommandNotFound):
         await ctx.send("Invalid command")
 
-@client.event
-async def on_message(msg):
-    if "u r dumb" in msg.content:
-        await msg.add_reaction("<:aPES_NoU:617645169038196757>")
-    else:
-        pass
+
 @client.event
 async def on_ready():
     await client.change_presence(activity=discord.Game(name=f"on {len(client.guilds)} servers | ;command"))
