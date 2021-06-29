@@ -61,7 +61,7 @@ async def arnav(ctx):
 
 @client.command(aliases=['abhi','sheikh'])
 async def abhishek(ctx):
-    await ctx.send("ishika ka premi")
+    await ctx.send("ishika ka premi but got rejected by her :(")
 
 @client.command(aliases=['shubh','shubhabcd'])
 async def shubham(ctx):
@@ -76,7 +76,7 @@ async def c(ctx,amount=2):
 
 @client.command(aliases=['short','tingu'])
 async def mantej(ctx):
-    await ctx.send("going to be a genshin impact addict")
+    await ctx.send("noob")
 
 @client.command(aliases=['anario','anonymous'])
 async def anubhav(ctx):
