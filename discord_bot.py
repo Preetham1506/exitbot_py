@@ -3,7 +3,7 @@ from discord.ext import commands
 import random
 import asyncio
 intents = discord.Intents.all()
-client = commands.Bot(command_prefix=".",intents=intents)
+client = commands.Bot(command_prefix=";",intents=intents)
 
 
 
