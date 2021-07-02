@@ -15,7 +15,7 @@ async def on_ready():
 
 
     await client.wait_until_ready()
-    statuses=[f"{len(client.users)} members",f"on {len(client.guilds)} servers|+command"]
+    statuses=[f"{len(client.users)} members",f"on {len(client.guilds)} servers|;command"]
 
     while not client.is_closed():
         status=random.choice(statuses)
