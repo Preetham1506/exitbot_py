@@ -1,12 +1,37 @@
 import discord
 from discord.ext import commands
 import random
+import asyncio
 client = commands.Bot(command_prefix=";")
 
 @client.event
+@client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game(name=f"on {len(client.guilds)} servers | ;command"))
-    print("The bot is ready")
+
+    #await client.wait_until_ready()
+    #await client.change_presence(activity=discord.Game(name= a+" members"))
+    #await client.change_presence(activity=discord.Game(name=f"on {len(client.guilds)} servers|;command"))
+    #await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,name=a + " members"))
+    print("Bot is ready")
+
+    array = []
+    for guild in client.guilds:
+        usercount = int(f"{guild.member_count}")
+
+        array.append(usercount)
+    a = sum(array)
+
+    print(a)
+    a = str(a)
+    await client.wait_until_ready()
+    statuses=[a + " members",f"on {len(client.guilds)} servers|;command"]
+
+    while not client.is_closed():
+        status=random.choice(statuses)
+        await client.change_presence(activity=discord.Game(name=status))
+
+        await asyncio.sleep(5)
+client.loop.create_task(on_ready())
 
 @client.event
 async def on_command_error(ctx,error):
