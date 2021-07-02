@@ -18,7 +18,12 @@ async def on_command_error(ctx,error):
         await ctx.send("Invalid command")
 
 
-
+@client.command()
+@commands.has_permissions(send_messages=True)
+async def membercount(ctx):
+    embed=discord.Embed(title="Members",color=discord.Color.blue())
+    embed.add_field(name=f"{ctx.guild.member_count}",value=f"{ctx.guild.name}")
+    await ctx.send(embed=embed)
     
 
 
@@ -175,6 +180,7 @@ async def command(ctx):
     embed.add_field(name=";invite", value="invite the bot to ur server")
     embed.add_field(name=";clear", value="deletes messages")
     embed.add_field(name=";mspam", value="spams a message in the server channel")
+    embed.add_field(name=";membercount", value="sends number of members in the server")
     embed.add_field(name=";cu", value="can be used in #counting to count numbers")
     embed.add_field(name=";tictactoe", value="starts a game of tictactoe")
     embed.add_field(name=";cancel", value="cancels ongoing tictactoe game")
