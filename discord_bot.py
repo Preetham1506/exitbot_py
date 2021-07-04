@@ -544,6 +544,7 @@ async def mathdiv(ctx, x: float, y: float):
 
 	except:
 		pass
+
 @client.command()
 async def mathmult(ctx, x: float, y: float):
 	try:
@@ -552,6 +553,7 @@ async def mathmult(ctx, x: float, y: float):
 
 	except:
 		pass
+
 @client.command()
 async def mathsqrt(ctx, x: float):
 	try:
@@ -559,6 +561,6 @@ async def mathsqrt(ctx, x: float):
 		await ctx.send(result)
 
 	except:
-		pass        
+		pass
         
 client.run("ODUxMDc0OTQyMjk2MjYwNjE5.YLy_Tg.yILCYs0ogWKCEQZdB45RgleeO2c")
