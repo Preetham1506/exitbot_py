@@ -126,53 +126,53 @@ async def ban(ctx,member:discord.Member,):
 usermsg=""
 dmnum=""
 
-@client.command()
-@commands.has_permissions(ban_members=True)
-async def spam(ctx,member:discord.Member,usermsg,dmnum):
-    dmnum=int(dmnum)
-    if dmnum==69 or dmnum<69:
-        try:
-            for i in range(0,dmnum):
-                await member.send(usermsg)
-            await ctx.send(member.mention + " check ur dms")
-        except:
-            await ctx.send(member.mention+" has closed their dms")
-    else:
-        await ctx.send("limit is 69 dms")
+#@client.command()
+#@commands.has_permissions(ban_members=True)
+#async def spam(ctx,member:discord.Member,usermsg,dmnum):
+    #dmnum=int(dmnum)
+    #if dmnum==69 or dmnum<69:
+        #try:
+            #for i in range(0,dmnum):
+                #await member.send(usermsg)
+            #await ctx.send(member.mention + " check ur dms")
+        #except:
+            #await ctx.send(member.mention+" has closed their dms")
+    #else:
+        #await ctx.send("limit is 69 dms")
 
-@client.command()
-@commands.has_permissions(ban_members=True)
-async def ping(ctx,member:discord.Member,pingnum):
-    pingnum=int(pingnum)
-    if pingnum==69 or pingnum<69:
-        for i in range(0,pingnum):
-                await ctx.send(member.mention)
+#@client.command()
+#@commands.has_permissions(ban_members=True)
+#async def ping(ctx,member:discord.Member,pingnum):
+    #pingnum=int(pingnum)
+    #if pingnum==69 or pingnum<69:
+        #for i in range(0,pingnum):
+                #await ctx.send(member.mention)
 
-    else:
-        await ctx.send("limit is 69 pings")
+    #else:
+        #await ctx.send("limit is 69 pings")
 mmsg=""
 pingnum2=""
-@client.command()
-@commands.has_permissions(ban_members=True)
-async def mping(ctx,member:discord.Member,mmsg,pingnum2):
-    pingnum2=int(pingnum2)
-    if pingnum2==69 or pingnum2<69:
-        for i in range(0,pingnum2):
-                await ctx.send(member.mention+mmsg)
+#@client.command()
+#@commands.has_permissions(ban_members=True)
+#async def mping(ctx,member:discord.Member,mmsg,pingnum2):
+    #pingnum2=int(pingnum2)
+    #if pingnum2==69 or pingnum2<69:
+        #for i in range(0,pingnum2):
+                #await ctx.send(member.mention+mmsg)
 
-    else:
-        await ctx.send("limit is 69 pings")
+    #else:
+        #await ctx.send("limit is 69 pings")
 msg3=""
 msgnum3=""
-@client.command()
-@commands.has_permissions(ban_members=True)
-async def mspam(ctx,msg3,msgnum3):
-    msgnum3=int(msgnum3)
-    if msgnum3==69 or msgnum3<69:
-        for i in range(0,msgnum3):
-            await ctx.send(msg3)
-    else:
-        await ctx.send("limit is 69 messages")
+#@client.command()
+#@commands.has_permissions(ban_members=True)
+#async def mspam(ctx,msg3,msgnum3):
+    #msgnum3=int(msgnum3)
+    #if msgnum3==69 or msgnum3<69:
+        #for i in range(0,msgnum3):
+            #await ctx.send(msg3)
+    #else:
+        #await ctx.send("limit is 69 messages")
 
 @client.command()
 async def invite(ctx):
@@ -185,22 +185,22 @@ async def invite(ctx):
 async def command(ctx):
     embed=discord.Embed(title="Commands List",color=discord.Color.blue())
     embed.add_field(name=";avatar",value="sends avatar of user")
-    embed.add_field(name=";spam",value="spams dm to a user")
-    embed.add_field(name=";ping", value="mass pings a user")
-    embed.add_field(name=";mping", value="pings a user and spams a msg in the server channel")
-    embed.add_field(name=";arnav", value="gives arnav's description")
+    #embed.add_field(name=";spam",value="spams dm to a user")
+    #embed.add_field(name=";ping", value="mass pings a user")
+    #embed.add_field(name=";mping", value="pings a user and spams a msg in the server channel")
+    #embed.add_field(name=";arnav", value="gives arnav's description")
     embed.add_field(name=";ban", value="bans a user")
     embed.add_field(name=";kick", value="kicks user from the server")
     embed.add_field(name=";mute", value="mutes a user")
     embed.add_field(name=";unmute", value="unmutes a muted user")
     embed.add_field(name=";invite", value="invite the bot to ur server")
     embed.add_field(name=";clear", value="deletes messages")
-    embed.add_field(name=";mspam", value="spams a message in the server channel")
+    #embed.add_field(name=";mspam", value="spams a message in the server channel")
     embed.add_field(name=";membercount", value="sends number of members in the server")
     embed.add_field(name=";cu", value="can be used in #counting to count numbers")
     embed.add_field(name=";tictactoe", value="starts a game of tictactoe")
     embed.add_field(name=";cancel", value="cancels ongoing tictactoe game")
-    embed.add_field(name=";crunchy", value="generates a crunchyroll acc")
+    #embed.add_field(name=";crunchy", value="generates a crunchyroll acc")
     await ctx.send(embed=embed)
 
 @client.command()
@@ -234,124 +234,16 @@ async def unmute(ctx,member:discord.Member):
     await member.remove_roles(mutedRole)
     await ctx.send(member.mention+" has been unmuted")
 
-crunchy_accs=["beatdown7478@yahoo.com:Ohnedich2 | Telegram id:  - Subscribed to: anime|drama|manga",
-"isaiahjb1@yahoo.com:06251996Ijb | Telegram id:  - Subscribed to: anime|drama|manga",
-"steve_o6139@hotmail.com:692013009 | Telegram id:  - Subscribed to: anime|drama|manga",
-"Rilikb@gmail.com:sk8later | Telegram id:  - Subscribed to: anime|drama|manga",
-"isernhas3@hotmail.com:goo00gle1 | Telegram id: - Subscribed to: anime|drama|manga",
-"marcusrneely@Yahoo.com:seeker12 | Telegram id:  - Subscribed to: anime|drama|manga",
-"johndonglong@yahoo.com:Undone1337 | Telegram id:  - Subscribed to: anime|drama|manga",
-"cdavisdrafting@aol.com:Wh1skers | Telegram id:  - Subscribed to: anime|drama|manga",
-"mka1232002@gmail.com:memo2002 | Telegram id:  - Subscribed to: anime|drama|manga",
-"redsoxboy826@aol.com:Password9 | Telegram id:  - Subscribed to: anime|drama|manga",
-"naomiortiz720@gmail.com:Angelena2001 | Telegram id:  - Subscribed to: anime|drama|manga",
-"trevor9453@gmail.com:wild9453 | Telegram id:  - Subscribed to: anime|drama|manga",
-"namitown@gmail.com:Mira4242564 | Telegram id:  - Subscribed to: anime|drama|manga",
-"mysticgilford101@yahoo.com:Gearfried12 | Telegram id:  - Subscribed to: anime|drama|manga",
-"baseballallstar227@gmail.com:Bossness8 | Telegram id:  - Subscribed to: anime|drama|manga",
-"sydpasterczyk@gmail.com:37Sniper | Telegram id:  - Subscribed to: anime|drama|manga",
-"samoneal631@gmail.com:gohawks23 | Telegram id:  - Subscribed to: anime|drama|manga",
-"freerunnertk@yahoo.com:Urbanno1! | Telegram id:  - Subscribed to: anime|drama|manga",
-"crosillo23@gmail.com:Cars1993 | Telegram id:  - Subscribed to: anime|drama|manga",
-"chris.arroyo@yahoo.com:Ilovemay25 | Telegram id:  - Subscribed to: anime|drama|manga",
-"jitb50801@gmail.com:nobissmeu1 | Telegram id:  - Subscribed to: anime|drama|manga",
-"nasereenali@gmail.com:Tut3ankhamon | Telegram id:  - Subscribed to: anime|drama|manga",
-"exia0094@gmail.com:rklssfre94 | Telegram id:  - Subscribed to: anime|drama|manga",
-"chancebroadway@yahoo.com:Annieb94 | Telegram id:  - Subscribed to: anime|drama|manga",
-"dustman075@aol.com:422520dw | Telegram id:  - Subscribed to: anime|drama|manga",
-"Morpice@gmail.com:DDadc664 | Telegram id:  - Subscribed to: anime|drama|manga",
-"victordancona@hotmail.com:janeiro04 | Telegram id:  - Subscribed to: anime|drama|manga",
-"slaytontreven@yahoo.com:Karnell23 | Telegram id:  - Subscribed to: anime|drama|manga",
-"Tanno_55@hotmail.com:tanman12 | Telegram id:  - Subscribed to: anime|drama|manga",
-"mccall.carl8@gmail.com:unlockm3 | Telegram id:  - Subscribed to: anime|drama|manga",
-"seabrick22@mail.com:Kaeldane2 | Telegram id:  - Subscribed to: anime|drama|manga",
-"rm.magnisalis@gmail.com:MaxMagni | Telegram id:  - Subscribed to: anime|drama|manga",
-"moomization@gmail.com:pickles2 | Telegram id:  - Subscribed to: anime|drama|manga",
-"bryan.interiano@gmail.com:Panda4217 | Telegram id:  - Subscribed to: anime|drama|manga",
-"sergiowork22@gmail.com:Checho14 | Telegram id:  - Subscribed to: anime|drama|manga",
-"matu_miami@hotmail.com:agramon14 | Telegram id:  - Subscribed to: anime|drama|manga",
-"kingcj86@aol.com:Bonjour@86 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"allenm_09@yahoo.com:qazwsxedc9 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"garethcodling@yahoo.com:spiderman1 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"xbuji6@gmail.com:vacavaca321 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"zanyzander24@yahoo.com:Angryveve1 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"ovanovicoff94@gmail.com:26715877 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"krisgbb13273@yahoo.com:cobraKD20 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"mikefreyer4@gmail.com:quins444 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"gleeliza@aol.com:Mommy777 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"kyenodanna@yahoo.com:Shonen303 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"kverburgt@yahoo.com:Cooper21 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"vincentervinii@yahoo.com:Ilovemyfamily3# | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"gsoccerfan101@aol.com:naruto00 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"mark_fleming_3@hotmail.com:Starcraft12 | Telegram id: @PremiumHostTG - Subscribed to: anime|drama|manga",
-"marijan.lacko@gmail.com:mlacko66 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 11:12:18 PM | Telegram id: @PremiumHostTG - ",
-"bigcrozier56@gmail.com:Notlad95 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 12:56:44 AM | Telegram id: @PremiumHostTG - ",
-"onehundredandfirsta.s.t@gmail.com:a.m604817 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 12:57:59 AM | Telegram id: @PremiumHostTG -",
-"eathan.is.epic@gmail.com:cucu1904 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 12:58:59 AM | Telegram id: @PremiumHostTG - ",
-"emaguilerar@gmail.com:Shadown1 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 12:59:31 AM | Telegram id: @PremiumHostTG - ",
-"corbett_christopher@yahoo.com:dougless1 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:00:00 AM | Telegram id: @PremiumHostTG -",
-"devante21watson@yahoo.com:watson22 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:01:53 AM | Telegram id: @PremiumHostTG - ",
-"this.davi@gmail.com:91352400 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:03:22 AM | Telegram id: @PremiumHostTG - ",
-"n.gigin@web.de:Cassie17 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:03:31 AM | Telegram id: @PremiumHostTG - ",
-"cristianncht@yahoo.com:criscool99 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:17:18 AM | Telegram id: @PremiumHostTG -",
-"brboobug73@aol.com:Brettjr12 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:24:56 AM | Telegram id: @PremiumHostTG - ",
-"cindi.gaines@yahoo.com:dominique5 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:28:23 AM | Telegram id: @PremiumHostTG -",
-"alyssaankney@gmail.com:buddy1 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:30:09 AM | Telegram id: @PremiumHostTG - ",
-"kajunior14@gmail.com:Charger0519 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:30:20 AM | Telegram id: @PremiumHostTG - ",
-"nessa_bor@hotmail.com:89032460 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:31:38 AM | Telegram id: @PremiumHostTG - ",
-"aarteaga3150@yahoo.com:Tonyhawk01 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:34:16 AM | Telegram id: @PremiumHostTG -",
-"nick.aladar.young@gmail.com:nottey69 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:34:35 AM | Telegram id: @PremiumHostTG -",
-"lucas.rachewsky@hotmail.com:lksbabu12 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:34:39 AM | Telegram id: @PremiumHostTG - ",
-"snowdvl@msn.com:Phantom1 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:34:49 AM | Telegram id: @PremiumHostTG - ",
-"will.nikaido@gmail.com:Gor3ds0x | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:39:05 AM | Telegram id: @PremiumHostTG -",
-"saint0fst33l@gmail.com:Harryharry1 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:39:27 AM | Telegram id: @PremiumHostTG -",
-"msitton@gmail.com:Mms09428- | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:44:10 AM | Telegram id: @PremiumHostTG - ",
-"youngturner96@gmail.com:Psychology1 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:44:57 AM | Telegram id: @PremiumHostTG -",
-"dennis.eigner55@gmail.com:vampirsaft535 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:45:59 AM | Telegram id: @PremiumHostTG - ",
-"jonathans2700@yahoo.com:Krypton27 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 1:58:44 AM | Telegram id: @PremiumHostTG - ",
-"luiz.tyler@gmail.com:luiz5704 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:02:08 AM | Telegram id: @PremiumHostTG - ",
-"direarchangelblade@gmail.com:dragonslayer1 | Type = premium_plus | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:05:46 AM | Telegram id: @PremiumHostTG -",
-"chaury07@gmail.com:CleBrowns07 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:11:53 AM | Telegram id: @PremiumHostTG - ",
-"callumphillip13579@gmail.com:grimmond | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:13:06 AM | Telegram id: @PremiumHostTG -",
-"jboss260@gmail.com:Class201 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:14:32 AM | Telegram id: @PremiumHostTG - ",
-"ramiro_g84@hotmail.com:2004243001 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:15:08 AM | Telegram id: @PremiumHostTG -",
-"erickg1730@gmail.com:123456skyrim | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:18:07 AM | Telegram id: @PremiumHostTG - ",
-"henriquez.salinas1@gmail.com:133133aa | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:19:04 AM | Telegram id: @PremiumHostTG -",
-"amberlambert1@aol.com:Morgan2004 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:22:42 AM | Telegram id: @PremiumHostTG - ",
-"c3ser93@gmail.com:21601141cf | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:23:53 AM | Telegram id: @PremiumHostTG - ",
-"erikbb22@gmail.com:birthday15 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:24:19 AM | Telegram id: @PremiumHostTG -",
-"nahuelgenessi@gmail.com:argentina22 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:25:39 AM | Telegram id: @PremiumHostTG - ",
-"escaflownely@gmail.com:Sm1701n79e | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:28:34 AM | Telegram id: @PremiumHostTG - ",
-"Kehoeusmc@gmail.com:MMass3ff3ct | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:29:08 AM | Telegram id: @PremiumHostTG - ",
-"poisonfrat@gmail.com:Bobismy13 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:30:11 AM | Telegram id: @PremiumHostTG - ",
-"hickstyler7@gmail.com:020801Ty | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:30:46 AM | Telegram id: @PremiumHostTG -",
-"rossymcfall@gmail.com:M00nclan | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:30:55 AM | Telegram id: @PremiumHostTG - ",
-"iv.riveros@gmail.com:runaway69 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:31:21 AM | Telegram id: @PremiumHostTG - ",
-"scrappysea@gmail.com:haloreach2 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:32:04 AM | Telegram id: @PremiumHostTG - ",
-"mbealfahim@gmail.com:pokerface101 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:32:13 AM | Telegram id: @PremiumHostTG - ",
-"valentinomascitti@gmail.com:farwestar12 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:32:23 AM | Telegram id: @PremiumHostTG -",
-"matheussmpinheiro@gmail.com:dohv4eq4 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:35:30 AM | Telegram id: @PremiumHostTG - ",
-"thach.steven@gmail.com:leilong788 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:37:11 AM | Telegram id: @PremiumHostTG - ",
-"marcuslynch32@gmail.com:person97 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:43:34 AM | Telegram id: @PremiumHostTG - ",
-"heathystockton23@gmail.com:Hmms2010 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:47:44 AM | Telegram id: @PremiumHostTG -",
-"sauro1094@gmail.com:Ericaholly10 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:48:58 AM | Telegram id: @PremiumHostTG - ",
-"mmarcus41@yahoo.com:Damien10 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:50:28 AM | Telegram id: @PremiumHostTG - ",
-"lasterblade@gmail.com:master/157 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:52:17 AM | Telegram id: @PremiumHostTG - ",
-"zach.grant96@live.com:tua9kana6 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:52:53 AM | Telegram id: @PremiumHostTG - ",
-"tommyoc0328@gmail.com:Sham0328 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:53:00 AM | Telegram id: @PremiumHostTG -",
-"donovanmarine@gmail.com:ScionxB24 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:54:01 AM | Telegram id: @PremiumHostTG -",
-"rthorne80@gmail.com:trebor1880 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:54:13 AM | Telegram id: @PremiumHostTG - ",
-"spidersqshr7@gmail.com:adam2002 | Type = premium | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:54:44 AM | Telegram id: @PremiumHostTG - ",
-"laritzad@gmail.com:lara2323 | Type = fan | Category = anime|drama|manga | ExpireDate = 5/9/2021 2:56:37 AM | Telegram id: @PremiumHostTG - "]
 
-@client.command()
-async def crunchy(ctx,member:discord.Member):
-    acc_num = random.randint(0, 108)
-    try:
-        await member.send(crunchy_accs[acc_num])
-        await ctx.send(member.mention+" acc sent in ur dms")
-    except:
-        await ctx.send(member.mention+" has closed their dms")
+
+#@client.command()
+#async def crunchy(ctx,member:discord.Member):
+    #acc_num = random.randint(0, 108)
+    #try:
+        #await member.send(crunchy_accs[acc_num])
+        #await ctx.send(member.mention+" acc sent in ur dms")
+    #except:
+        #await ctx.send(member.mention+" has closed their dms")
 
 player1 = ""
 player2 = ""
