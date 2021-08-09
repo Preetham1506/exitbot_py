@@ -126,53 +126,53 @@ async def ban(ctx,member:discord.Member,):
 usermsg=""
 dmnum=""
 
-#@client.command()
-#@commands.has_permissions(ban_members=True)
-#async def spam(ctx,member:discord.Member,usermsg,dmnum):
-    #dmnum=int(dmnum)
-    #if dmnum==69 or dmnum<69:
-        #try:
-            #for i in range(0,dmnum):
-                #await member.send(usermsg)
-            #await ctx.send(member.mention + " check ur dms")
-        #except:
-            #await ctx.send(member.mention+" has closed their dms")
-    #else:
-        #await ctx.send("limit is 69 dms")
+@client.command()
+@commands.has_permissions(ban_members=True)
+async def spam(ctx,member:discord.Member,usermsg,dmnum):
+    dmnum=int(dmnum)
+    if dmnum==69 or dmnum<69:
+        try:
+            for i in range(0,dmnum):
+                await member.send(usermsg)
+            await ctx.send(member.mention + " check ur dms")
+        except:
+            await ctx.send(member.mention+" has closed their dms")
+    else:
+        await ctx.send("limit is 69 dms")
 
-#@client.command()
-#@commands.has_permissions(ban_members=True)
-#async def ping(ctx,member:discord.Member,pingnum):
-    #pingnum=int(pingnum)
-    #if pingnum==69 or pingnum<69:
-        #for i in range(0,pingnum):
-                #await ctx.send(member.mention)
+@client.command()
+@commands.has_permissions(ban_members=True)
+async def ping(ctx,member:discord.Member,pingnum):
+    pingnum=int(pingnum)
+    if pingnum==69 or pingnum<69:
+        for i in range(0,pingnum):
+                await ctx.send(member.mention)
 
-    #else:
-        #await ctx.send("limit is 69 pings")
+    else:
+        await ctx.send("limit is 69 pings")
 mmsg=""
 pingnum2=""
-#@client.command()
-#@commands.has_permissions(ban_members=True)
-#async def mping(ctx,member:discord.Member,mmsg,pingnum2):
-    #pingnum2=int(pingnum2)
-    #if pingnum2==69 or pingnum2<69:
-        #for i in range(0,pingnum2):
-                #await ctx.send(member.mention+mmsg)
+@client.command()
+@commands.has_permissions(ban_members=True)
+async def mping(ctx,member:discord.Member,mmsg,pingnum2):
+    pingnum2=int(pingnum2)
+    if pingnum2==69 or pingnum2<69:
+        for i in range(0,pingnum2):
+                await ctx.send(member.mention+mmsg)
 
-    #else:
-        #await ctx.send("limit is 69 pings")
+    else:
+        await ctx.send("limit is 69 pings")
 msg3=""
 msgnum3=""
-#@client.command()
-#@commands.has_permissions(ban_members=True)
-#async def mspam(ctx,msg3,msgnum3):
-    #msgnum3=int(msgnum3)
-    #if msgnum3==69 or msgnum3<69:
-        #for i in range(0,msgnum3):
-            #await ctx.send(msg3)
-    #else:
-        #await ctx.send("limit is 69 messages")
+@client.command()
+@commands.has_permissions(ban_members=True)
+async def mspam(ctx,msg3,msgnum3):
+    msgnum3=int(msgnum3)
+    if msgnum3==69 or msgnum3<69:
+        for i in range(0,msgnum3):
+            await ctx.send(msg3)
+    else:
+        await ctx.send("limit is 69 messages")
 
 @client.command()
 async def invite(ctx):
