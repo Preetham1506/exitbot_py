@@ -125,24 +125,7 @@ async def ban(ctx,member:discord.Member,):
         
 usermsg=""
 dmnum=""
-@client.command()
-@commands.has_permissions(ban_members=True)
-async def addrole(ctx,role:discord.Role,member:discord.Member):
-    try:
-        await member.add_roles(role)
 
-        await ctx.send("Successfully added "+f"**"+role.name+"**" + " to "+ member.mention)
-    except:
-        await ctx.send(member.mention+ " already has"+f"**" + role.name + "**")
-
-@addrole.error
-async def on_command_error(ctx, error):
-    if isinstance(error, commands.MissingPermissions):
-        await ctx.send("Your role isn't high enough")
-    elif isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send("Please enter all the required arguments")
-    elif isinstance(error, commands.CommandNotFound):
-        await ctx.send("Invalid command")
 @client.command()
 @commands.has_permissions(ban_members=True)
 async def spam(ctx,member:discord.Member,usermsg,dmnum):
